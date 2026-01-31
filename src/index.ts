@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-
-import { User ,  UserStatus , UserRole  } from "./models/user";
-
-const  User1 : User = {
-  id:1,
-  name:"John Doe",
-  email:"yashdhanani16@gmail.com" ,
-  role: "user" ,
-  status : UserStatus.ACTIVE,
-createdAt : new Date()
-}
-
-console.log(User1);
-=======
 import User from "./models/user";
 import { UserRole, UserStatus } from "./models/user";
 
@@ -72,4 +57,3 @@ const u6: User = {
 
 const users: User[] = [u1, u2, u3, u4, u5, u6];
 export default users;
->>>>>>> main

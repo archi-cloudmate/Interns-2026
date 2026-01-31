@@ -1,6 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var user_1 = require("./models/user");
+<<<<<<< HEAD
+var User1 = {
+    id: 1,
+    name: "John Doe",
+    email: "yashdhanani16@gmail.com",
+    role: "user",
+    status: user_1.UserStatus.ACTIVE,
+    createdAt: new Date()
+};
+console.log(User1);
+=======
 var u1 = {
     id: 111,
     name: "Sachin",
@@ -51,3 +62,4 @@ var u6 = {
 };
 var users = [u1, u2, u3, u4, u5, u6];
 exports.default = users;
+>>>>>>> main

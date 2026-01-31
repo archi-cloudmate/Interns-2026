@@ -6,6 +6,8 @@ var UserStatus;
     UserStatus[UserStatus["ACTIVE"] = 0] = "ACTIVE";
     UserStatus[UserStatus["INACTIVE"] = 1] = "INACTIVE";
 })(UserStatus || (exports.UserStatus = UserStatus = {}));
+console.log(" this is name ");
+
 // const  user1 :  User = {
 //   id:1,
 //       name:   

@@ -1,5 +1,6 @@
 import User from "./models/user";
 import { UserRole, UserStatus } from "./models/user";
+import {updateUser} from "./utils/updateUser";
 
 const u1: User = {
   id: 111,
@@ -55,5 +56,11 @@ const u6: User = {
   createdAt: new Date(),
 };
 
+
 const users: User[] = [u1, u2, u3, u4, u5, u6];
 export default users;
+
+const updateuser = updateUser(users[0], {
+  name:"het"
+})
+console.log(updateuser)

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TOdo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h2>TODO</h2>
+    <div class="main">
+      <div class="input-wrapper">
+        <input
+          id="task"
+          type="text"
+          placeholder="Enter your task"
+          style="border-radius: 30px"
+        />
+        <button class="todo" id="add" onclick="addItem()">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <div class="button">
+        <button onclick="filterTasks('all')">All</button>
+
+        <button onclick="filterTasks('checked')">
+          <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+           Completed
+        </button>
+        <button onclick="filterTasks('unchecked')">
+          <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+           Remaining 
+        </button>
+      </div>
+      <div class="ul">
+        <h1>LIST OF TASKS</h1>
+        <ul id="list"></ul>
+      </div>
+      <div class="modal-overlay" id="welcomeModal">
+        <div class="modal">
+          <h2>Welcome</h2>
+          <p>Stay organized and crush your tasks today!</p>
+          <button onclick="closeModal()">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
